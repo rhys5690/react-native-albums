@@ -3,10 +3,7 @@ import { View, Text } from 'react-native';
 import axios from 'axios';
 
 class AlbumList extends Component {
-  constructor(props) {
-    super();
-
-  }
+  state = { albums: [] };
 
   componentWillMount() {
     console.log("yerere");
