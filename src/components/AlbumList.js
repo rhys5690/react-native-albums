@@ -11,6 +11,7 @@ class AlbumList extends Component {
       .then(response => this.setState({ albums: response.data }));
   }
   render() {
+    console.log(this.state);
   return(
     <View>
       <Text>Album List</Text>
