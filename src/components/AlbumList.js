@@ -12,6 +12,7 @@ class AlbumList extends Component {
   }
   render() {
     console.log(this.state);
+    console.log('yer')
   return(
     <View>
       <Text>Album List</Text>
