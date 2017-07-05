@@ -1,12 +1,23 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
+import Card from './Card';
+import CardSection from './CardSection';
 
-const AlbumDetail = (props) => {
-  const album = props.album;
+const AlbumDetail = ({props}) => {
+const { title, artist, thumbnail_image, image, url } = album;
+const {
+  thumbnailStyle,
+  headerContentStyle,
+  thumbnailContainerStyle,
+  headerTextStyle,
+  imageStyle
+} = styles;
   return(
-    <View>
-      <Text>{album.title}</Text>
-    </View>
+    <Card>
+      <CardSection>
+          <Text>{props.album.title}</Text>
+      </CardSection>
+    </Card>
   )
 }
 
